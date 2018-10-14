@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var i = [];
+    var random = [];
     for (var i = 19; i<121; i++) {
         random.push(i);
     }
@@ -23,7 +23,7 @@ var yourTotalScore = 0;
     function pickRandomNum(arr) {
         var x = arr[Math.floor(Math.random() * arr.length)];
         randomNumber = x;
-        $("#randomNumber").html(randomNumber);
+        $("#yourTargetScore").html(randomNumber);
     }
     function pickRandomCrystals(arr) {
 
@@ -35,7 +35,7 @@ var yourTotalScore = 0;
         }
     function crystalValues(arr) {
         for (i = 0; i < arr.length; i++) {
-             $("#button-" + (i+1)).attr("value", arr[i]);
+             $("btn btn-" + (i+1)).attr("value", arr[i]);
             }
             c1 = arr[0];
             c2 = arr[1];
@@ -47,62 +47,64 @@ var yourTotalScore = 0;
 
         crystalNumbers = []; // clears crystal number values
     
-        pickRandomNumber(rand);
+        pickRandomNumber(i);
     
         pickRandomCrystals(crystals);
     
         crystalValues(crystalNumbers);
     
         totalScore = 0;
-        $("#totalNumber").html(totalScore);
+        $("#yourScoreTotal").html(totalScore);
         alert(x);
         } 
-    pickRandomNumber(rand); // random number to match
-    pickRandomCrystals(crystals); // array of random crystal values
+    pickRandomNumber(random); 
+    pickRandomCrystals(crystals); 
     crystalValues(crystalNumbers);
 
     $("btn btn-danger").on("click", function() {
 
-        totalScore += c1;
-        $("#totalNumber").html(totalScore);
+        totalScore += cSuccess;
+        $("#yourScoreTotal").html(totalScore);
     });
 
     $("btn btn-warning").on("click", function() {
 
         totalScore += c2;
-        $("#totalNumber").html(totalScore);
+        $("youScoreTotal").html(totalScore);
     });
 
     $("btn btn-success").on("click", function() {
 
         totalScore += c3;
-        $("#totalNumber").html(totalScore);
+        $("#yourScoreTotal").html(totalScore);
     });
 
     $("btn btn-primary").on("click", function() {
 
         totalScore += c4;
-        $("#totalNumber").html(totalScore);
+        $("#yourScoreTotal").html(totalScore);
     });
 
-$("button").on("click", function() {
+$("a").on("click", function() {
     // this is what happens if the user wins
     if (totalScore == randNumber) {
 
         wins++;
-        console.log(totalScore);
-        $("#totalNumber").html(totalScore);
+        $("#yourScoreTotal").html(totalScore);
         $("#wins").html("Wins: " + wins);
 
-
-        setTimeout(function() {gameReset("YOU WIN!!")}, 200);
     }
 
     else if (totalScore > randNumber){
 
         losses++;
-        $("#totalNumber").html(totalScore);
+        $("#yourScoreTotal").html(totalScore);
         $("#losses").html("Losses: " + losses);
+
+    }
+
+
+    });
 // var num1= $(".red");
 // var num2= $(".yellow");
 // var num3= $(".green");
@@ -204,4 +206,3 @@ $("button").on("click", function() {
         //     loser();
         //   }
     // });   
-}); 
