@@ -3,31 +3,31 @@ $(document).ready(function() {
   var characters = {
     "Obi-Wan Kenobi": {
       name: "Obi-Wan Kenobi",
-      health: 120,
-      attack: 8,
+      health: 150,
+      attack: 9,
       imageUrl: "assets/images/obiwan-920x584.png",
-      enemyAttackBack: 15
+      enemyAttackBack: 20
     },
     "Luke Skywalker": {
       name: "Luke Skywalker",
-      health: 100,
-      attack: 14,
+      health: 120,
+      attack: 16,
       imageUrl: "assets/images/luke.jpeg",
-      enemyAttackBack: 5
+      enemyAttackBack: 8
     },
     "Darth Sidious": {
       name: "Darth Sidious",
-      health: 150,
-      attack: 8,
+      health: 170,
+      attack: 10,
       imageUrl: "assets/images/Emperor_Sidious.png",
-      enemyAttackBack: 20
+      enemyAttackBack: 30
     },
     "Darth Maul": {
       name: "Darth Maul",
-      health: 180,
-      attack: 7,
+      health: 200,
+      attack: 9,
       imageUrl: "assets/images/220px-Darth_Maul.png",
-      enemyAttackBack: 25
+      enemyAttackBack: 35
     }
   };
 
