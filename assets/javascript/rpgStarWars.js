@@ -5,28 +5,28 @@ $(document).ready(function() {
       name: "Obi-Wan Kenobi",
       health: 150,
       attack: 9,
-      imageUrl: "assets/images/obiwan-920x584.png",
+      imageUrl: "https://www.thoughtco.com/thmb/pYLUnM7lQ6ef-ShHTdunHcExcw0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/EP2-IA-60435_R_8x10-56a83bea3df78cf7729d314a.jpg",
       enemyAttackBack: 20
     },
     "Luke Skywalker": {
       name: "Luke Skywalker",
       health: 120,
       attack: 16,
-      imageUrl: "assets/images/luke.jpeg",
+      imageUrl: "https://i.redd.it/2qmnb44sbt7z.jpg",
       enemyAttackBack: 8
     },
     "Darth Sidious": {
       name: "Darth Sidious",
       health: 170,
       attack: 10,
-      imageUrl: "assets/images/Emperor_Sidious.png",
+      imageUrl: "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/emperor-palpatine-star-wars-battlefront-iii-73.5.jpg",
       enemyAttackBack: 30
     },
     "Darth Maul": {
       name: "Darth Maul",
       health: 200,
       attack: 9,
-      imageUrl: "assets/images/220px-Darth_Maul.png",
+      imageUrl: "https://vignette.wikia.nocookie.net/starwars/images/2/2e/Maulsnarl.jpg/revision/latest?cb=20120826203633",
       enemyAttackBack: 35
     }
   };
